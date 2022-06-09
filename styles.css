@@ -1,7 +1,7 @@
 :root {
-    --primary: #8c38ff;
+    --primary: #426cf5;
     --light: #EEEEEE;
-    --dark: #212121;
+    --dark: #0c0c3a;
 }
 
 * {
@@ -10,6 +10,8 @@
     box-sizing: border-box;
     font-family: 'Fira sans', sans-serif;
 }
+
+
 
 .container {
     max-width: 1280px;
@@ -117,10 +119,14 @@ cursor: pointer;
     text-align: center;
     margin-bottom: 16px;
     padding: 12px 16px;
-    background-color: var(--primary);
+    background-color: #000080;
 
     color: #FFF;
     text-decoration: none;
+}
+
+.mobile-nav a:hover {
+    background-color: #426cf5;
 }
 
 .menu {
@@ -155,3 +161,59 @@ cursor: pointer;
     display: flex;
     }
 }
+
+.banner img{
+ 
+  min-height: 100%;
+  min-width: 1024px;
+	
+  
+  width: 100%;
+  height: auto;
+	
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+    
+}
+@media screen and (max-width: 1024px) {
+    banner img {
+      left: 50%;
+      margin-left: -512px;
+    }
+  }
+
+.main-content {
+    width: 100%;
+    position: absolute;
+    top: 38%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    
+
+}
+
+.main-content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+    color: #FFF;
+    background-color: var(--dark);
+    border-radius: 25px;
+    border: 2px solid #426cf5;
+    width: fit-content;
+    margin: 0 auto;
+
+}
+.main-content h2 {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: #fff;
+     background-color: var(--dark);
+    border-radius: 25px;
+    border: 2px solid #426cf5;
+    width: fit-content;
+}
+
